@@ -1,0 +1,42 @@
+.top {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(back.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 25vh;
+    position: relative;
+}
+.budget {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.budget_title {
+    font-size: 26px;
+}
+.budget_value {
+    text-align: center;
+    font-size: 25px;
+}
+
+.bottom {
+    margin-top: 35px;
+}
+
+.sales_header {
+    margin-top: 30px;
+}
+.header_name, .header_article, .header_ctrl, .header_amount, .header_value {
+    font-weight: 400;
+    font-size: 23px;
+}
+.sales_list {
+    margin-top: 15px;
+}
+.item_name, .item_article, .item_amount, .item_budget {
+    font-size: 17px;
+}
+.item {
+    margin-top: 15px;
+}

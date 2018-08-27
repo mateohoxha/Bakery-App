@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bakery App | Clients</title>
+    <link rel="stylesheet" href="css/clients.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <a class="navbar-brand" href="#">Bakery App</a>    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articles.html">Articles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+            <div class="client-register-section">
+                <h3>Register new client:</h3>
+                <br>
+                <div class="row">
+                    <div class="col-5">
+                        <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0 add_name" id="inlineFormInput" placeholder="Client's Name">
+                    </div>
+                    <div class="col-5">
+                        <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0 add_location" id="inlineFormInput" placeholder="Client's Location">
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-primary add_btn">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="client">
+                <div class="client-title"><h3>Clients:</h3></div>
+                <div class="clients-header">
+                    <div class="row" style="text-align: center;">
+                        <div class="col">
+                            <div class="header_name">Name:</div>
+                        </div>
+                        <div class="col">
+                            <div class="header_location">Location:</div>
+                        </div>
+                        <div class="col">
+                            <div class="header_ctrl">Commands:</div>
+                        </div>
+                    </div>                           
+                </div>
+                <div class="clients_list">
+
+                    <!--
+                    <div class="item" id="client-0">
+                        <div class="row" style="text-align: center;">
+                            <div class="col">
+                                <div class="item_name">Supermarket Gesti</div>
+                            </div>
+                            <div class="col">
+                                <div class="item_location">Perballe Policise</div>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-danger btn_delete"><i class="far fa-trash-alt"></i></button>
+                            </div>
+                        </div>                           
+                    </div>
+                    
+                    <div class="item" id="client-1">
+                        <div class="row" style="text-align: center;">
+                            <div class="col">
+                                <div class="item_name">Ismet Alla</div>
+                            </div>
+                            <div class="col">
+                                <div class="item_location">Stacioni</div>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-danger btn_delete"><i class="far fa-trash-alt"></i></button>
+                            </div>
+                        </div>                           
+                    </div>
+                    -->
+                    
+                </div>
+            </div>
+        </div>
+        <br>
+    
+    <script src="js/clients.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bakery App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <a class="navbar-brand" href="#">Bakery App</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clients.html">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articles.html">Articles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="top">
+        <div class="budget">
+            <div class="budget_title">Avaiable budget in
+                <span class="date">%Date%</span>
+            </div>
+            <div class="budget_value">+ 32,500 lekë</div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="container">
+            <div class="sales-registration-section">
+                <h3>Add a new sale:</h3>
+                <br>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="form-group">
+                            <select class="form-control" id="clientsDom">
+                                <option>Select a client</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <select class="form-control" id="articlesDom">
+                                <option>Select an article</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <input type="number" class="form-control mb-2 mr-sm-2 mb-sm-0 add_amount" id="inlineFormInput" placeholder="Amount">
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-primary add_btn">Add</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="sales">
+                <h3>Sales:</h3>
+                <div class="sales_header">
+                    <div class="row" style="text-align: center;">
+                        <div class="col">
+                            <div class="header_name">Name:</div>
+                        </div>
+                        <div class="col">
+                            <div class="header_article">Article:</div>
+                        </div>
+                        <div class="col">
+                            <div class="header_amount">Amount:</div>
+                        </div>
+                        <div class="col">
+                            <div class="header_value">Value:</div>
+                        </div>
+                        <div class="col">
+                            <div class="header_ctrl">Commands:</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sales_list">
+
+                    <!--
+                    <div class="item" id="sale-0">
+                        <div class="row" style="text-align: center;">
+                            <div class="col">
+                                <div class="item_name">Supermarket Gesti</div>
+                            </div>
+                            <div class="col">
+                                <div class="item_article">Buke e gjate</div>
+                            </div>
+                            <div class="col">
+                                <div class="item_amount">5</div>
+                            </div>
+                            <div class="col">
+                                <div class="item_budget">+3500 lekë</div>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-danger btn_delete"><i class="far fa-trash-alt"></i></button>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="item" id="sale-1">
+                        <div class="row" style="text-align: center;">
+                            <div class="col">
+                                <div class="item_name">Ismet Alla</div>
+                            </div>
+                            <div class="col">
+                                <div class="item_article">Buke misri</div>
+                            </div>
+                            <div class="col">
+                                <div class="item_amount">14</div>
+                            </div>
+                            <div class="col">
+                                <div class="item_budget">+5600 lekë</div>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-danger btn_delete"><i class="far fa-trash-alt"></i></button>
+                            </div>
+                        </div> 
+                    </div>
+
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
