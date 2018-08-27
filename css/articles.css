@@ -1,0 +1,28 @@
+.article-register-section {
+    margin-top: 50px;
+}
+
+.articles {
+    margin-top: 30px;
+}
+
+.articles-header {
+    margin-top: 30px;
+}
+
+.header_name, .header_location, .header_ctrl {
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.articles_list {
+    margin-top: 15px;
+}
+
+.item_name, .item_location {
+    font-size: 17px;
+}
+
+.item {
+    margin-top: 15px;
+}
